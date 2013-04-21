@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "subdomain": "fisherwebdev",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.0",
+  "engines": {
+    "node": "0.8.20",
+    "npm": "1.2.10"
+  },
+  "dependencies": {
+    "marked": "0.2.8"
+  }
+}

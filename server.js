@@ -1,20 +1,27 @@
 var http    = require('http')
   , url     = require('url')
   , path    = require('path')
-  , filesys = require('fs')       // file system
+  , fs      = require('fs')       // file system
   , marked  = require('marked')   // markdown parser
   , jade    = require('jade')     // template and layout engine
   , connect = require('connect'); // middleware
 
 
+marked.setOptions({langPrefix: "prettyprint language-"});
+
 
 var getCompiledView = function (path, options) {
-  var options = options || {filename: path};
-  return jade.compile(filesys.readFileSync(path, 'utf8'), options);
-}
-
-var defaultLayout = getCompiledView('./views/layouts/default-layout.jade'),
-    defaultContent = getCompiledView('./views/blocks/default-content.jade')
+      var options = options || {filename: path};
+      return jade.compile(fs.readFileSync(path, 'utf8'), options);
+    }
+  , views = {
+      layouts: {
+        default: getCompiledView('./views/layouts/default-layout.jade')
+      },
+      content: {
+        default: getCompiledView('./views/blocks/default-content.jade')
+      }
+    };
 
 
 var respondToRequest = function (req, res) {
@@ -25,7 +32,7 @@ var respondToRequest = function (req, res) {
     , content  = "500: Server Error. Something is seriously messed up.\n";
 
   if (filePath.indexOf(".ico") < 0) {
-    filesys.exists(path.dirname(filePath), function (exists) {
+    fs.exists(path.dirname(filePath), function (exists) {
 
       if (!exists) {
         status  = 404;
@@ -46,7 +53,7 @@ var respondToRequest = function (req, res) {
 
 
 var handlePageRequest = function (res, filePath) {
-  filesys.readFile(filePath, "binary", function (err, file) {
+  fs.readFile(filePath, "binary", function (err, file) {
 
     var status = 500
       , headers = {'Content-Type': 'text/plain'}
@@ -63,7 +70,7 @@ var handlePageRequest = function (res, filePath) {
       var title = file.slice(0, file.indexOf("\n"))
         , parse = marked.parse;
 
-      content = defaultContent({title: title, parse: parse, markdown: file}); // marked.parse(file);
+      content = views.content.default({title: title, parse: parse, markdown: file}); // marked.parse(file);
     }
 
     res.writeHeader(status, headers);
@@ -78,8 +85,10 @@ var app = connect()
   .use(connect.logger('dev'))
   .use(connect.directory('public'))
   .use(connect.static(__dirname + '/public'))
-  .use(respondToRequest)
+  .use(respondToRequest);
+
 
 http.createServer(app).listen(8080);
+
 
 // console.log('rock!');

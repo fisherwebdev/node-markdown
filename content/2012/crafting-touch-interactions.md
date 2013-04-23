@@ -1,8 +1,8 @@
 Crafting Touch Interactions: Touch Events, Pointer Events and Hardware Acceleration
 ===================================================================================
 
-by Bill Fisher<br /> 
-Originally published by [Hot Labs] [26] on 10/26/2012, 10:37 am
+by Bill Fisher<br />
+Originally published by [Hot Labs] [26] on October 26th, 2012
 
 [26]: http://labs.hotstudio.com
 
@@ -87,7 +87,7 @@ Additionally, the following CSS properties will help to prevent some unwanted be
 
 ```css
 html {
-  /* Prevents the selection of text within an element.  
+  /* Prevents the selection of text within an element.
     This can be useful in relation to a long press or other long touch interaction.*/
   -webkit-user-select: none;
 
@@ -144,8 +144,8 @@ var elem = document.querySelector("#my_element"),
       elem.style.webkitTransform = "rotate(" + degrees + "deg)";
       requestAnimationFrame(spin, 1000/60); // 60 frames per second is the screen's refresh rate
     }(); // invoke the spinning function immediately
-```    
-    
+```
+
 This animation may look okay on a desktop browser, but when we try look at that same animation on an Android device there will be a noticeable degradation. We can improve this by either using rotate3d, or by simply adding a 3D translation to the transformation declaration.
 
 ```javascript
@@ -200,7 +200,7 @@ Interestingly, however, the pointer events are only very loosely associated with
 [MSGestureEvents] [17] not only provide the ability to detect standard gestures such as pinch-to-transform, double-tap and long press, they are also closely related to [MSGesture] [18] objects, which may serve to arbitrarily group together pointer events into multi-touch gestures. Additionally, Microsoft throws in some extra magic with inertia to sweeten the sauce.
 
 [17]: http://msdn.microsoft.com/en-us/library/ie/hh772076.aspx
-[18]: http://msdn.microsoft.com/en-us/library/ie/hh968249.aspx 
+[18]: http://msdn.microsoft.com/en-us/library/ie/hh968249.aspx
 
 But while these new gesture events are exciting, in some ways they are quite laborious to work with and limited in their scope. Consider the boilerplate to get started with a custom gesture event:
 
@@ -237,8 +237,11 @@ elem.addEventListener("MSPointerDown", function (ev) {
   // each pointer must be added to the gesture
   customGesture.addPointer(ev.pointerId);
 });
-Yeah, can you believe it? Not so nice. But wait…there are some more interesting things to come. Now we can finally set up our gesture's event handler.
+```
 
+Yeah, can you believe it? Not so nice. But there are some more interesting things to come. Now we can finally set up our gesture's event handler.
+
+```javascript
 elem.addEventListener("MSGestureChange", function (ev) {
   // get the current css transform matrix
   var matrix = new MSCSSMatrix(ev.target.style.transform);

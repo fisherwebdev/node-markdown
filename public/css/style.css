@@ -1,10 +1,31 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
-.content {
+
+header, .content, footer {
     max-width: 60em;
     margin: 0 auto;
 }
+
+#brand {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.07em;
+}
+
+h1, h2 {
+    letter-spacing: -0.05em;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    padding: 1em 1em 1em 0;
+}
+
 .content p {
     line-height: 1.4em;
     margin-bottom: 1.4em;

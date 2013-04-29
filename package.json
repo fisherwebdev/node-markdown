@@ -4,11 +4,11 @@
   "scripts": {
     "start": "server.js"
   },
-  "version": "0.0.0",
-  "engines": {
-    "node": "0.8.20",
-    "npm": "1.2.10"
-  },
+  "version": "0.0.0-1",
+//  "engines": {
+//    "node": "0.8.20",
+//    "npm": "1.2.10"
+//  },
   "dependencies": {
     "marked": "0.2.8",
     "jade": "0.29.0",

@@ -5,10 +5,10 @@
     "start": "server.js"
   },
   "version": "0.0.0-1",
-//  "engines": {
-//    "node": "0.8.20",
-//    "npm": "1.2.10"
-//  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x"
+  },
   "dependencies": {
     "marked": "0.2.8",
     "jade": "0.29.0",

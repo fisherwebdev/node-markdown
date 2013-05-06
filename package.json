@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "node-markdown",
   "subdomain": "fisherwebdev",
   "scripts": {
     "start": "server.js"

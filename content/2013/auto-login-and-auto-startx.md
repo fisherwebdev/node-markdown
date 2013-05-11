@@ -1,4 +1,5 @@
-# Auto Login and Auto StartX
+Auto Login and Auto StartX
+==========================
 
 ## Setting up the Raspberry Pi to automatically login
 

@@ -19,11 +19,30 @@ h1, h2 {
 
 nav {
     overflow: hidden;
+    border-top: 7px solid #000;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
     float: left;
-    padding: 1em 1em 1em 0;
+    height: 2.5em;
+    padding-right: 1em;
+}
+
+nav li a {
+    display: block;
+    padding: 6px 0 7px;
+    color: #000;
+    text-decoration: none;
+}
+
+nav .underlined {
+    border-bottom: 1px solid black;
 }
 
 .content p {
@@ -40,3 +59,5 @@ code {
     margin: 0.5em 0.5em 0.7em;
     display: block;
 }
+
+

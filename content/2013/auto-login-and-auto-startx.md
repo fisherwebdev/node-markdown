@@ -1,5 +1,5 @@
-Auto Login and Auto StartX
-==========================
+Auto Login and Auto "startx"
+============================
 
 ## Setting up the Raspberry Pi to automatically login
 
@@ -14,7 +14,7 @@ Comment out the line that looks like this:
 And replace it by adding this just below:
 
 ```
-1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 >/dev/tty1 2>&1
+1:2345:respawn:/bin/login -f <YOURUSERNAME> tty1 /dev/tty1
 ```
 
 Now your Raspberry Pi can boot up, and you will be able to SSH into it immediately.

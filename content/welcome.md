@@ -1,6 +1,16 @@
-This site is about web application development and emerging interactive technologies, especially those that can be applied to the Web or be programmed with JavaScript.
+<section class="intro">
 
+![Hi, I'm Bill](/img/bill.gif)
+
+<p>
+This site is about web application development and emerging interactive technologies, especially those that can be applied to the Web or be programmed with JavaScript.
+</p>
+
+<p>
 You might find the following topics covered here: JavaScript, Ruby, CSS, HTML5, Node.js, jQuery, the Web Audio API, touch events and touch screen interactions, motion tracking, Leap Motion, Raspberry Pi, Arduino, Linux, OS X, MySQL, Postgres, Solr, CouchDB and a whole lot more.  Okay Googlebot?  Okay.
+</p>
+
+</section>
 
 ## Latest Blog Posts
 

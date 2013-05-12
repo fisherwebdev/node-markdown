@@ -1,9 +1,328 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title></title>
+  <meta charset="utf-8">
+  <title>Bill Fisher - Resume - Web Developer - Front End Engineer - Web Application Programmer</title>
+  <meta name="Description" content="Bill Fisher - Web Developer - Front End Engineer - Web Application Programmer">
+  <meta name="Keywords" content="Bill, Fisher, resume, developer, engineer, programmer, javascript, ecmascript, css, css3, html, html5, ruby, rails, sinatra, rspec, php, web, cms, sql, mysql, ajax, dhtml, lamp, mobile, touch, touchy">
+  <meta name="robots" content="all">
+
+  <!-- tell iPhone not to shrink mobile website -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+  <link title="Created by Bill Fisher" rel="author" rev="resume" href="http://fisherwebdev.com/">
+
+  <style type='text/css' media='all'>
+      /*Eric Meyer's CSS Reset, with 62.5% font-size modification*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-weight: inherit;
+      font-size:100%;
+      font-style: inherit;
+      font-family: inherit;
+      vertical-align: baseline;
+    }
+      /* remember to define focus styles! */
+    :focus {
+      outline: 0;
+    }
+    body {
+      line-height: 1;
+      color: black;
+      background: white;
+      font-size:62.5%;
+    }
+    ol, ul {
+      list-style: none;
+    }
+      /* tables still need 'cellspacing="0"' in the markup */
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    caption, th, td {
+      text-align: left;
+      font-weight: normal;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: "";
+    }
+    blockquote, q {
+      quotes: "" "";
+    }
+      /* end of reset */
+
+    body {width:974px; margin-left:auto; margin-right:auto; height:100%; position:relative;}
+
+    h1, h2, h3 {font-family:Arial Black, Gadget, sans-serif; padding-bottom:5px; font-style:italic; text-transform:uppercase;}
+    h1 {color:#ddd; font-size:11em; padding-right:9px; /*margin-top:-14px;*/ text-align:right; line-height:.8em;}
+    h2 {font-size:7em; color:#fff; top:-16px; left:-13px; position:absolute;}
+
+    p, ul.nav, a.toTop, address, dl, .section ul {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; font-size:1.4em;}
+    p, a.toTop, address, dl, .section ul {line-height:1.4em; letter-spacing:1px;}
+    a {color: #666;}
+    a:hover {text-decoration:none; color:#000;}
+
+    ul.nav {margin-bottom:8px;}
+    ul.nav li {width:153px; height:2em; line-height:1.4em; display:inline-block; border-top:8px solid #ddd; border-bottom:8px solid #ddd; border-right:8px solid #ddd;}
+    ul.nav li.first {border-left:8px solid #ddd;}
+    ul.nav li a {background:#ddd; color:#fff; text-decoration:none; display:table-cell; vertical-align:middle; text-align:center; width:188px; height:2em; letter-spacing:5px;}
+    ul.nav li a:hover {background:#fff; color:#000;}
+
+    #jobTitles {text-align:right; letter-spacing:.376em; margin-bottom:4px;}
+    .section {position:relative; overflow:hidden; padding:5.6em 10px 30px 10px; background:url(data:image/jpg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAqAABAwERAAIRAQMRAf/EAG0AAQEBAAAAAAAAAAAAAAAAAAQFCgEBAQEAAAAAAAAAAAAAAAAAAQACEAABAgQEBQUAAAAAAAAAAAAAARPwYaESUYHhohEhkQJicdFygtIRAAICAgIDAQAAAAAAAAAAAAARAWEhUfCBMXECIv/aAAwDAQACEQMRAD8A108sSFRsRZ3RwFRRliLJ1UFGhc2MsnTUsC/QpuOQqSdDm/XooZJ/JQblXQlJD2V8aA4J2PbWUZGlGpBeijYPRFFqSx9TKgPyUW5ptAVI9lYTUnBIoN/Gv6FTYMotpOMgY42OsXDd2+5pWHPA2zxohdzzs0ObjihZJ0Msku0MbMqaFWJisZBkRNsk66DnZKLP/9k=) top left repeat-x;}
+    a.toTop {position:absolute; top:10px; right:10px;}
+
+    dd {margin-left:25px; margin-bottom:5px; font-style:italic; color:#333;}
+    dd a {display:block;}
+    dd p {font-size: inherit; padding-bottom: 5px;}
+
+    #quickLinks {display:none;}
+
+    #footer {padding-bottom:20px;}
+  </style>
+
+  <!--[if !IE]>-->
+  <style type="text/css" media="only screen and (max-device-width: 480px)">
+    body {width:auto;padding:5px;}
+    h1 {font-size:5em; margin:0; padding:0; text-align:left;}
+    h2 {font-size:3em; position:relative; top:0; left:0;}
+    .section{padding:0 0 10px 0;}
+    p, ul.nav, a.toTop, address, dl, .section ul {font-size:1.6em;}
+    p, a.toTop, address, dl, .section ul {line-height:1.6em; letter-spacing:0px;}
+    #jobTitles {letter-spacing:0px; text-align:left;}
+    #jobTitles span {display:block;}
+    ul.nav li {width:auto; height:auto; line-height:1.4em; display:block; border:none;}
+    ul.nav li.first {border:none;}
+    ul.nav li a {background:#fff; color:#000; text-decoration:none; display:inline; vertical-align:middle; text-align:left; width:auto; height:auto; letter-spacing:0px;}
+    #quickLinks {display:block; color:#ddd; padding-top:10px;}
+  </style>
+  <style type="text/css" media="print">
+    body {width:auto;}
+    h1 {font-size:2em; margin:0; padding:0; text-align:left;}
+    h2 {font-size:1.6em; position:relative; top:0; left:0;}
+    h1, h2 {font-family:Lucida Sans Unicode, Lucida Grande, sans-serif; font-style:normal;}
+    .section{padding:0 0 10px 0;}
+    p, address, dl, .section ul {font-size:1.2em; line-height:1.2em; letter-spacing:0px;}
+    #jobTitles {letter-spacing:0px; text-align:left; padding-bottom:30px;}
+    ul.nav {display:none;}
+    a {text-decoration:none;}
+    a.toTop{display:none;}
+    #footer{display:none;}
+  </style>
+  <!--<![endif]-->
+
 </head>
-<body>
+<body id="bill_fisher_resume">
+<header>
+  <h1>Bill Fisher</h1>
+  <p id="jobTitles"><span>Web Developer,</span><span> Front End Engineer,</span><span> Web Application Programmer</span></p>
+
+  <nav>
+    <h2 id="quickLinks">Quick Links</h2>
+    <ul class="nav">
+      <li class="first"><a href="#contact">Contact</a></li><li><a href="#objectives">Objectives</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#interests">Interests</a></li><li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <address>
+      <span class="street-address">5730 Van Fleet Avenue</span><br />
+      <span class="locality">Richmond</span>, <span class="region">CA</span> <span class="postal-code">94804</span><br />
+      <a href="tel:+15104148771" class="tel" title="Call Bill from Your Mobile Phone">510.414.8771</a><br />
+      <a href="http://fisherwebdev.com" title="Bill's Website" target="_blank">http://fisherwebdev.com</a><br />
+      <a class="email" href="mailto:bill@fisherwebdev.com" title="Email Bill">
+        bill&#064;fisherwebdev&#046;com
+      </a><br />
+      <a href="http://www.linkedin.com/profile/view?id=22333267" title="Bill's LinkedIn Profile" target="_blank">LinkedIn profile</a>
+    </address>
+  </div>
+</section>
+
+<section>
+  <div id="objectives" class="section">
+    <h2>Objectives</h2>
+    <ul>
+      <li>To work with superlative engineers, designers and executives.</li>
+      <li>To improve my skills continually by learning from peers and mentors.</li>
+      <li>To work for the greater good and to have fun doing it.</li>
+      <li>To develop web applications that are extremely performant, even on constrained devices, and that leverage the power of the interoperable Web.</li>
+      <li>To help push the Open Web Platform forward toward increased performance, interoperability, real-time data, and effective, meaningful communication. I believe that open systems will win.</li>
+    </ul>
+    <a class="toTop" href="#bill_fisher_resume">back to top</a>
+  </div>
+</section>
+
+<section>
+  <div id="skills" class="section">
+    <h2>Skills</h2>
+    <dl>
+      <dt>Communication</dt>
+      <dd>Excellent written and verbal communication. Very comfortable speaking in public to large audiences, leading group activities or providing instruction. I have been complemented by my peers many times on how I express complex ideas clearly so that everyone listening may understand. Many designers have told me that I am their preferred developer to work with for this reason. I am a former high school English teacher and a musician, and I have little to no fear of being on stage. In the industry, I have proven these abilities by speaking at SXSW, the HTML5 Developer Conference and the San Francisco JavaScript Meetup.</dd>
+      <dt>JavaScript</dt>
+      <dd>JavaScript is my greatest passion and thus my greatest strength. I am very confortable with the asynchronous, event-driven paradigm that is native to JS.  I enjoy building applications with Ajax and JSON. While I tend to write in an object-oriented style, I am increasingly interested in Functional programming and how JavaScript can be written in this way. I'm comfortable writing plain JavaScript in addition to leveraging jQuery, Prototype and other frameworks. I have used Jasmine for testing. Additionally, I have experience in a wide variety of JavaScript libraries and APIs, including the Web Audio API, D3, Raphaël, Google Maps, and Seadragon.js. I continually improve my knowledge of the new APIs available to the browser, and I am very excited about where the Web Platform is headed.</dd>
+      <dt>HTML and CSS</dt>
+      <dd>Clean, semantic markup.  Comfortable with HTML5. Cross-browser compatibility. Media queries for responsive layouts. Image sprites. CSS3 hardware-accellerated animations. Comfortable translating design files into valid code.</dd>
+      <dt>Client-side MVC</dt>
+      <dd>I have used Backbone and Require.js for structured client-side application development.  Previously, I was experienced with JavaScriptMVC. I look forward to working with Ember, Angular and Knockout, but I also have my eye on Meteor and Flight.</dd>
+      <dt>Mobile Web Development</dt>
+      <dd>Touch screen gestural interactions. Extreme optimization. Progressive enhancement. Device, browser, screen and feature detection.</dd>
+      <dt>Ruby and Rails</dt>
+      <dd>Comfortable with both the ORM-based MVC structure of Rails and Module-based mix-ins. Used RSpec for testing. Also experienced with Sinatra. I enjoy the syntactic sugar of Ruby very much, and I find it leads me to write DRY, well-organized, elegant code.  Learning both Ruby and Rails has had an extremely positive influence on my programming in general.</dd>
+      <dt>MySQL and Postgres</dt>
+      <dd>Normalizaton. Full-Text search.</dd>
+      <dt>Solr</dt>
+      <dd>I used Solr in conjunction with a Ruby on Rails application to provide not only full-text search, but also geolocation-based search.</dd>
+      <dt>UNIX / Linux</dt>
+      <dd>Shell scripting. Cron jobs. cURL. Comfortable at the command line.</dd>
+      <dt>Apache</dt>
+      <dd>.htaccess and pretty URLs. gzip. MIME types.</dd>
+      <dt>Optimization</dt>
+      <dd>YSlow and other tools, Image sprites, gzipping, code refactoring and minification, Base64 image encoding.</dd>
+      <dt>Motion Capture</dt>
+      <dd>Experimental research with the Leap Motion device to bring motion capture interactions to the Web.</dd>
+      <dt>Real-time</dt>
+      <dd>Experimental research with Node.js and Socket.IO for full-duplex, real-time web applications.</dd>
+      <dt>CouchDB</dt>
+      <dd>Experimental research with CouchDB and Sammy.js for RESTful, document-based web applications with little to no server-side code.</dd>
+      <dt>PHP</dt>
+      <dd>Object-oriented. MVC frameworks. cURL. CMS customization (WordPress, Expression Engine, Joomla!).</dd>
+      <dt>Java/J2EE/JSP</dt>
+      <dd>Experience in an academic setting only.</dd>
+      <dt>Version Control</dt>
+      <dd>Git, Mercurial, SVN.</dd>
+      <dt>Attitude</dt>
+      <dd>Positive. Can-do.</dd>
+    </dl>
+    <a class="toTop" href="#bill_fisher_resume">back to top</a>
+  </div>
+</section>
+
+<section>
+  <div id="experience" class="section">
+    <h2>Experience</h2>
+    <dl>
+      <dt>Hot Studio, 2011-present</dt>
+      <dd>
+        <p>Developed both prototypes and production code for numerous web applications.  Clients included Zinio, Akamai, Wyse, AAA and Leap Motion.  Worked with user experience, interaction and visual designers to create innovative products.  Met and surpassed expectations in delivering solutions to complex challenges.  Provided leadership within the engineering team and within Hot Studio as a whole, advocating for HTML5 apps, responsive web design, client-side MVC and test-driven development.  Mentored colleagues and sought out co-mentors across disciplines.</p>
+        <p>Built web applications with Ruby on Rails, Sinatra, Backbone.js and other frameworks. Utilized RESTful SaaS APIs to speed development. Lead the development effort in many of these projects.</p>
+        <p>Authored and published Hot Studio's first open source project: Touchy, a jQuery plugin for managing touch events.  Organized the hosting of the San Francisco JavaScript Meetup where I first presented Touchy. Advocated for and then developed Hot Labs, a new blog for Hot Studio that would be focused on technology and experimentation.</p>
+        <p>I also spoke publically at the HTML5 Developer Conference and SXSW about touch screen interactions and mobile web application development. In April of 2013, I will be speaking again at the HTML5 Developer Conference about bringing motion capture interactions to the Web.</p>
+        <a href="http://hotstudio.com" target="_blank">Hot Studio</a>
+        <a href="http://labs.hotstudio.com" target="_blank">Hot Labs</a>
+        <a href="https://github.com/HotStudio/touchy" target="_blank">Touchy on GitHub</a>
+        <a href="http://touchyjs.org" target="_blank">Touchy Home Page</a>
+        <a href="http://marakana.com/s/video_getting_the_native_feel_javascript_for_mobile_and_tablet_web_apps,483/index.html" target="_blank">Video of my presentation at the SFJS Meetup in October 2011</a>
+        <a href="http://www.youtube.com/watch?v=fPx_daqRzDY" target="_blank">Video of my presentation in October 2012 at HTML5DevConf</a>
+        <a href="http://schedule.sxsw.com/2013/events/event_IAP4752" target="_blank">Schedule listing for my SXSW workshop</a>
+      </dd>
+      <dt>Empower Interactive, 2010-2011</dt>
+      <dd>Empower is a start-up company working to build tools for people to improve their mental health through cognitive behavioral therapy.  While I was there, the company was only four people.  I worked with this small team using Agile development methodologies to build an Ajax-driven, Ruby on Rails web application. I also developed the company website.
+        <a href="http://empower-interactive.com" target="_blank">http://empower-interactive.com</a>
+      <dd>
+      <dt>White Lotus Design, 2008-2011</dt>
+      <dd>Completed over ten projects ranging from small website revisions, to complete website creations, to a major Google Maps project with a custom, map-based administrative interface.  Content management systems included Wordpress, Joomla!, Radiant (for Ruby on Rails), and small, custom systems based on PHP/MySQL.
+        <a href="http://whitelotusdesign.com" target="_blank">http://whitelotusdesign.com</a>
+        <a href="http://maps.npaihb.org/" target="_blank">http://maps.npaihb.org</a>
+      <dd>
+      <dt>eCert Systems, 2010</dt>
+      <dd>Worked to improve the UI in eCert's Rails-based, email validity reporting application.
+        <a href="http://www.ecertsystems.com/" target="_blank">http://www.ecertsystems.com/</a>
+      <dd>
+      <dt>San Francisco Symphony, 2010</dt>
+      <dd>I developed a mobile website for the Symphony's Black and White Ball without the ability to use any server-side code due to project constraints.
+        <a href="http://fisherwebdev.com/sfsymphony/" target="_blank">http://fisherwebdev.com/sfsymphony/</a>
+      <dd>
+      <dt>Conscious Creative, 2010</dt>
+      <dd>Created a devlopment subdomain that exactly mirrored the production environment for Concious Creative's work on http://www.norcalhostels.org/.  Discovered problems and assisted in strategies for upgrading and improving the site.
+        <a href="http://www.consciouscreative.com/">http://www.consciouscreative.com/</a>
+      <dd>
+      <dt>Zap Squeak Design, 2010</dt>
+      <dd>I worked with Gabe Scelta of Zap Squeak Design to repair a booking widget on an adventure travel website. I used PHP, SOAP and Ajax as part of this project.
+        <a href="http://www.zapsqueak.com" target="_blank">http://www.zapsqueak.com</a>
+      <dd>
+      <dt>Flow Funding, 2010</dt>
+      <dd>Flow Funding hired me to revise their database, their administrative interface, and the presentation of data on their website.  This project used the Smarty templating system.
+        <a href="http://flowfunding.org" target="_blank">http://flowfunding.org</a>
+      <dd>
+      <dt>Web-Fu Design, 2010</dt>
+      <dd>Developed Web-Fu's company site in Wordpress.  Created a custom, Ajax-based portfolio presentation for the home page.
+        <a href="http://www.webfu-design.com/" target="_blank">http://www.webfu-design.com/</a>
+      <dd>
+      <dt>Zoey Setiawan, 2010</dt>
+      <dd>Zoey hired me to build a simple WordPress site for an accounting firm.
+        <a href="http://zoeychloe.com" target="_blank">http://zoeychloe.com</a>
+      <dd>
+      <dt>BARTeye, 2009</dt>
+      <dd>Built a web application, optimized for smartphones, that gets the real-time ETA feed from Bay Area Rapid Transit and visually presents the data.  I did this for fun in my spare time.
+        <a href="http://barteye.com" target="_blank">http://barteye.com</a>
+      <dd>
+      <dt>Yoga Bliss, 2009</dt>
+      <dd>A Wordpress site for a small business. I hired a freelance designer and managed the project.
+        <a href="http://yogabliss.com" target="_blank">http://yogabliss.com</a>
+      <dd>
+      <dt>UC Berkeley, 2000-2004</dt>
+      <dd>In my first professional job with computers, I was an IT help desk technician.  I did a wide variety of tasks, including some work with SQL.<dd>
+    </dl>
+    <a class="toTop" href="#bill_fisher_resume">back to top</a>
+  </div>
+</section>
+
+<section>
+  <div id="interests" class="section">
+    <h2>Interests</h2>
+    <dl>
+      <dt>Mobile and Multiscreen Experiences</dt>
+      <dd>Touch interactions, HTML5 apps, responsive web design, geolocation, real-time web.</dd>
+      <dt>Interoperability</dt>
+      <dd>Mash-ups, RESTful APIs, Device APIs.</dd>
+      <dt>Data Visualization</dt>
+      <dd>Maps, dashboards, business intelligence, SVG and the canvas tag.</dd>
+      <dt>Open Source / Transparency</dt>
+      <dd>Open systems will win.</dd>
+      <dt>What I want to learn in the next 12 months</dt>
+      <dd>Blogging faster. Coding faster. Functional JavaScript. More mobile web apps, particularly where the line between web apps and native apps can be blurred. More NoSQL: MongoDB, Neo4j and Hadoop. More Ruby. More UNIX. Improved understanding of design patterns. How to become active and effective within web standards organizations.</dd>
+    </dl>
+    <a class="toTop" href="#bill_fisher_resume">back to top</a>
+  </div>
+</section>
+
+<section>
+  <div id="education" class="section">
+    <h2>Education</h2>
+    <dl>
+      <dt>UC Santa Cruz, 1993-1995</dt>
+      <dd>Bachelor of Arts in Cultural Anthropology, minor in Literature</dd>
+      <dt>San Francisco State University, 1999-2000</dt>
+      <dd>Single subject teaching credential and over 20 units of post-baccalaureate studies in English, 2000</dd>
+      <dt>Diablo Valley College, 2006-2007</dt>
+      <dd>20 units of study in Computer Science</dd>
+      <dt>City College of San Francisco, 2007-2008</dt>
+      <dd>18 units of study in Computer Science</dd>
+    </dl>
+    <a class="toTop" href="#bill_fisher_resume">back to top</a>
+  </div>
+</section>
+
+<footer>
+  <div id="footer">
+    <p>This resume was coded by hand with a text editor.  It operates as an independent document without external files, so you may save it for off-line use.  It also looks good on a smartphone.</p>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -73,11 +73,12 @@ var handlePageRequest = function (res, filePath) {
 
     else {
       var title = file.slice(0, file.indexOf("\n"))
+        , bodyClass = title.replace(/\W|_/, "").replace(" ", "-")
         , parse = marked.parse;
 
       status = 200;
       headers = {'Content-Type': 'text/html'};
-      content = views.content.default({title: title, parse: parse, markdown: file}); // marked.parse(file);
+      content = views.content.default({title: title, bodyClass: bodyClass, parse: parse, markdown: file}); // marked.parse(file);
     }
 
     res.writeHeader(status, headers);

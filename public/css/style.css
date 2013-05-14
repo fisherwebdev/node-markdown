@@ -1,18 +1,23 @@
 body {
     font-family: "helvetica neue", helvetica, arial, sans-serif;
     margin: 0;
+    background-color: #b5996c;
+    background-image: url('/img/recycled-7.jpg');
+    color: #4a2303;
+}
+
+a {
+    color: rgb(41, 78, 45); /*#5f0000;*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #812704;
 }
 
 header, .content, footer {
     max-width: 60em;
     padding: 0 1em;
-}
-
-header {
-    margin: 1em auto;
-}
-
-.content, footer {
     margin: 0 auto;
 }
 
@@ -20,7 +25,7 @@ header {
     font-size: 3em;
     font-weight: 700;
     letter-spacing: -0.07em;
-    border-bottom: 7px solid #000;
+    border-bottom: 7px solid #4a2303;
     padding: 7px 0;
 }
 
@@ -33,7 +38,7 @@ h2, h3 {
 }
 
 h3 {
-    border-top: 1px solid black;
+    border-top: 1px solid #4a2303;
     padding-top: 1em;
 }
 
@@ -58,12 +63,14 @@ nav li {
 nav li a {
     display: block;
     padding: 1.2em 0 5px;
-    color: #000;
+    text-decoration: none;
+}
+nav li a:hover {
     text-decoration: none;
 }
 
 nav .underlined {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #812704;
 }
 
 .content p {
@@ -87,7 +94,7 @@ code {
 
 .intro img {
     float: left;
-    border: 7px solid black;
+    border: 7px solid #4a2303;
     margin: 1em 1em 0 0;
     height: 128px;
     width: 128px;

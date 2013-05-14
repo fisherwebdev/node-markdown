@@ -1,6 +1,6 @@
 <section class="intro">
 
-![Hi, I'm Bill](/img/bill.gif)
+![Hi, I'm Bill](/img/bill-in-brown.png)
 
 <p>
 This site is about web application development and emerging interactive technologies, especially those that can be applied to the Web or be programmed with JavaScript.
